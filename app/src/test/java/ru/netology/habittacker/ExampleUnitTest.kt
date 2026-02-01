@@ -1,4 +1,4 @@
-package ru.netology.habitttacker
+package ru.netology.habittacker
 
 import org.junit.Test
 

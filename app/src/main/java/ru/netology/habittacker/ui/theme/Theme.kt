@@ -1,6 +1,5 @@
-package ru.netology.habitttacker.ui.theme
+package ru.netology.habittacker.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

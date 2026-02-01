@@ -1,4 +1,4 @@
-package ru.netology.habitttacker.data
+package ru.netology.habittacker.data
 
 import java.time.LocalDate
 import java.util.UUID
