@@ -1,4 +1,4 @@
-package ru.netology.habittacker.ui.theme
+package ru.netology.habittracker.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

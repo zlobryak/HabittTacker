@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "ru.netology.habittacker"
+    namespace = "ru.netology.habittracker"
     compileSdk {
         version = release(36)
     }

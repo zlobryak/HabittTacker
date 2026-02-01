@@ -1,10 +1,10 @@
-package ru.netology.habittacker.repository
+package ru.netology.habittracker.repository
 
 
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
-import ru.netology.habittacker.data.Habit
+import ru.netology.habittracker.data.Habit
 import java.time.LocalDate
 
 /**
@@ -29,7 +29,7 @@ import java.time.LocalDate
  *
  * @see Habit for domain model documentation
  * @see kotlinx.coroutines.flow.StateFlow for reactive stream semantics
- * @see ru.netology.habittacker.viewmodel.HabitViewModel for typical consumer pattern
+ * @see ru.netology.habittracker.viewmodels.HabitListUiState for typical consumer pattern
  */
 class HabitRepository {
     /**

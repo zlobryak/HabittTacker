@@ -1,4 +1,4 @@
-package ru.netology.habittacker.ui.theme
+package ru.netology.habittracker.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
