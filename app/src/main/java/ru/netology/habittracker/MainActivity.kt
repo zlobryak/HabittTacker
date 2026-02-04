@@ -34,7 +34,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import ru.netology.habittracker.data.Habit
-import ru.netology.habittracker.theme.HabitTrackerTheme
+import ru.netology.habittracker.ui.theme.HabitTrackerTheme
 import java.time.LocalDate
 import java.time.format.TextStyle
 import java.util.Locale
