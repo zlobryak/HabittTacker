@@ -81,7 +81,6 @@ data class HabitListUiState(
  * @see HabitRepository for data persistence layer
  */
 class HabitListViewModel(
-    private val repository: HabitRepository = HabitRepository()
 ) : ViewModel() {
 
     /**
@@ -171,7 +170,7 @@ class HabitListViewModel(
      * @see SharingStarted.WhileSubscribed for caching behavior
      */
     val uiState: StateFlow<HabitListUiState> = combine(
-        repository.habits,
+        HabitRepository.habits,
         _searchQuery,
         _currentWeekStart,
         _showDeleteDialog,
@@ -237,7 +236,7 @@ class HabitListViewModel(
     fun toggleHabitCompletion(habitId: String, date: LocalDate) {
         // Только для сегодняшнего дня
         if (date == LocalDate.now()) {
-            repository.toggleHabitCompletion(habitId, date)
+            HabitRepository.toggleHabitCompletion(habitId, date)
         }
     }
 
@@ -312,7 +311,7 @@ class HabitListViewModel(
      * @see hideDeleteDialog for state cleanup
      */
     fun deleteHabit(habitId: String) {
-        repository.deleteHabit(habitId)
+        HabitRepository.deleteHabit(habitId)
         hideDeleteDialog()
     }
 

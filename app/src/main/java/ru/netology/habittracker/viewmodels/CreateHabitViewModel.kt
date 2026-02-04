@@ -85,9 +85,7 @@ data class CreateHabitUiState(
  * @see CreateHabitUiState for UI state representation
  */
 class CreateHabitViewModel(
-    private val repository: HabitRepository = HabitRepository()
 ) : ViewModel() {
-
     /**
      * Internal mutable state flow for managing habit creation form state.
      *
@@ -222,7 +220,8 @@ class CreateHabitViewModel(
         }
 
         val newHabit = Habit(name = name)
-        repository.addHabit(newHabit)
+        HabitRepository.addHabit(newHabit)
+
 
         return true
     }

@@ -31,7 +31,7 @@ import java.time.LocalDate
  * @see kotlinx.coroutines.flow.StateFlow for reactive stream semantics
  * @see ru.netology.habittracker.viewmodels.HabitListUiState for typical consumer pattern
  */
-class HabitRepository {
+object HabitRepository {
     /**
      * Mutable backing property for habit state updates.
      *
