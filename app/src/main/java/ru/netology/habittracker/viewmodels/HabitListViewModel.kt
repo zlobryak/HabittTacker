@@ -75,7 +75,7 @@ data class HabitListUiState(
  * <p>Thread safety: All operations occur on ViewModel's coroutine scope, ensuring
  * sequential consistency for state updates.</p>
  *
- * @property repository Data access layer for habit operations (injected, defaults to in-memory implementation)
+ * @property ru.netology.habittracker.repository.HabitRepository Data access layer for habit operations (injected, defaults to in-memory implementation)
  * @constructor Creates HabitListViewModel with optional repository parameter
  * @see androidx.lifecycle.ViewModel for lifecycle ownership semantics
  * @see HabitRepository for data persistence layer
